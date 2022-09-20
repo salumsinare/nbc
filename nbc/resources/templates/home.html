@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<!--
+ Author            : Salum Sinare
+ Author id         : A243345
+ Author email      : salum.sinare@stanbic.co.tz
+ Organization      : Stanbic Bank Tanzania LTD
+ Organization Unit : Software Engineering
+ Copyright (C) 2022
+
+ Created on 20 Sep 2022
+-->
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+    <head>
+        <title>NBC Code challenge</title>
+    </head>
+    <body>
+        <div id="content">
+            <!-- page content -->
+            <form action="">
+                <select name="institution">
+                    <option value="X">X</option>
+                    <option value="Y">Y</option>
+                </select>
+            </form>
+        </form>
+        <div class="x_panel col-md-12">
+            <div class="x_title">
+                <h2>List of transactions from insitutions</h2>
+                <div class="clearfix"></div>
+            </div>
+            <div class="x_content">
+                <table class="table table-striped table-bordered">
+                    <thead>
+                        <tr>
+                            <th>ID</th>
+                            <th>TRANSACTION REF</th>
+                            <th>ACCOUNT</th>
+                            <th>AMOUNT</th>
+                            <th>INSTITUTION</th>
+                            <th>CREDTED ON</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr th:each="transaction : ${transactions}">
+                            <td th:text="${transaction.id}"></td>
+                            <td th:text="${transaction.transactionRef}"></td>
+                            <td th:text="${transaction.account}"></td>
+                            <td th:text="${transaction.amount}"></td>
+                            <td th:text="${transaction.partner.institution}"></td>
+                            <td th:text="${transaction.partner.uplodedOn}"></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <!-- /page content -->
+    </div>
+</body>
+</html>
