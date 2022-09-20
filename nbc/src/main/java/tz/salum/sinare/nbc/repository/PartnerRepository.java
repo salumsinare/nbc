@@ -8,12 +8,15 @@
 
  *  Created on 20 Sep 2022
  */
-package tz.salum.sinare.nbc.controller;
+package tz.salum.sinare.nbc.repository;
+
+import org.springframework.data.jpa.repository.JpaRepository;
+import tz.salum.sinare.nbc.model.Partner;
 
 /**
  *
  * @author A243345
  */
-class ResponseBuilder {
+public interface PartnerRepository extends JpaRepository<Partner, Long> {
 
 }

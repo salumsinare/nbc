@@ -8,15 +8,15 @@
 
  *  Created on 20 Sep 2022
  */
-package tz.salum.sinare.nbc.controller;
+package tz.salum.sinare.nbc.service;
 
-import org.springframework.stereotype.Controller;
+import tz.salum.sinare.nbc.model.Partner;
 
 /**
  *
  * @author A243345
  */
-@Controller
-public class PageController {
+public interface FileProcessorService {
 
+    public void process(Partner partner);
 }

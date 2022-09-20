@@ -8,7 +8,7 @@
 
  *  Created on 20 Sep 2022
  */
-package tz.salum.sinare.nbc.model;
+package tz.salum.sinare.nbc.constant;
 
 /**
  *

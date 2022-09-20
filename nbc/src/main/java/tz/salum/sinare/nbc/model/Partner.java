@@ -10,6 +10,7 @@
  */
 package tz.salum.sinare.nbc.model;
 
+import tz.salum.sinare.nbc.constant.XY;
 import java.io.Serializable;
 import java.time.LocalDateTime;
 import javax.persistence.Entity;
@@ -27,7 +28,7 @@ import lombok.Data;
  */
 @Data
 @Entity
-public class PartnersTransactions implements Serializable {
+public class Partner implements Serializable {
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
